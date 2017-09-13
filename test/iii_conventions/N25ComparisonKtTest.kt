@@ -8,6 +8,8 @@ class N25ComparisonKtTest {
     /* Month numbering starts with 0 (0-Jan, 1-Feb, ... 11-Dec) */
     @Test fun testDateComparison() {
         assertTrue(task25(MyDate(2014, 1, 1), MyDate(2014, 1, 2)))
+        assertTrue(task25(MyDate(2013, 1, 1), MyDate(2014, 1, 1)))
+        assertTrue(task25(MyDate(2014, 1, 1), MyDate(2014, 2, 1)))
     }
 
     @Test fun testBefore() {
@@ -23,5 +25,5 @@ class N25ComparisonKtTest {
     }
 
     /* If you declare 'compareTo' as an extension function, remove this one to make the code compile */
-    operator fun MyDate.compareTo(other: MyDate): Int = todoTask25()
+//    operator fun MyDate.compareTo(other: MyDate): Int = todoTask25()
 }
