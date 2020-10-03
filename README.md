@@ -1,3 +1,7 @@
+# My implementation for Kotlin Koans while I was trying Kotlin for the first time.
+
+The original Readme file is below
+
 Kotlin Koans
 ===========
 
